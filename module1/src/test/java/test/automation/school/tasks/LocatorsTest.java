@@ -19,7 +19,7 @@ public class LocatorsTest {
 
     @BeforeClass
     public void setUp() throws Exception {
-        System.setProperty("webdriver.chrome.driver", "../drivers/chromedriver-v2.30-win32/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "../drivers/chromedriver-v2.39-win32/chromedriver.exe");
         driver = new ChromeDriver();
         driver.get("http://automationpractice.com/index.php");
     }
@@ -95,8 +95,9 @@ public class LocatorsTest {
         // TIP - use 'contains()'
 
         //TODO 7
-        List<WebElement> visibleProductsByXpath = driver.findElements(By.ByXPath("//*[id="));
-        Assert.assertTrue(visibleProductsByXpath.size() == 7);
+      //  List<WebElement> visibleProductsByXpath = driver.findElements(By.ByXPath("//*[id="));
+        //Assert.assertTrue(visibleProductsByXpath.size() == 7);
 
 
     }
+}
